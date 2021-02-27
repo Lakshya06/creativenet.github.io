@@ -25,6 +25,14 @@
             font-weight: 500;
         }
     }
+    
+    @media (min-width: 769px) and (max-width: 1025px) {
+        #topheader a {
+            color: ghostwhite;
+            font-size: 11px;
+            font-weight: 500;
+        }
+    }
     /* NAVBAR: Starts */
     
     #bottomheader {
@@ -39,7 +47,7 @@
     
     #bottomheader img {
         height: 35px;
-        width: 80px;
+        width: 100px;
         transition: 1s;
     }
     
@@ -47,6 +55,14 @@
         font-size: 15px;
         color: #212529;
         font-weight: 600;
+    }
+    
+    @media (min-width: 769px) and (max-width: 1025px) {
+        #bottomheader a {
+            font-size: 14px;
+            color: #212529;
+            font-weight: 600;
+        }
     }
     
     #bottomheader a.active {
@@ -112,29 +128,60 @@
         font-family: 'Ubuntu', sans-serif;
     }
     
-    #testimonials h3 {
-        font-weight: 700;
+    #testimonials h2 {
+        font-weight: 800;
     }
     
-    #students .row {
-        background-color: #e6e8e6;
+    #students .col-md-6 .testi {
+        /* background-color: red; */
+        background-image: linear-gradient(#d90429, #df3a3c);
+        /* border: solid black 2px; */
+        border-radius: 15px;
         /* background-color: rgba(0, 0, 0, 0.63); */
     }
     
-    #students img {
-        height: 120px;
-        width: 120px;
-        border-radius: 50%;
+    #students .col-md-6 ._blue {
+        /* background-color: red; */
+        background-image: linear-gradient(#6f9bc4, #7ca8d1);
+        /* border: solid black 2px; */
+        border-radius: 15px;
+        /* background-color: rgba(0, 0, 0, 0.63); */
+    }
+    
+    @media only screen and (max-width: 468px) {
+        #students img {
+            height: 100px;
+            width: 79px;
+            border-radius: 50%;
+        }
+    }
+    
+    @media (min-width: 468px) and (max-width: 769px) {
+        #students img {
+            height: 120px;
+            width: 79px;
+            border-radius: 50%;
+        }
+    }
+    
+    @media only screen and (min-width: 769px) {
+        #students img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
     }
     
     #students p {
         font-size: 15px;
         font-weight: lighter;
         line-height: 25px;
+        color: ghostwhite;
     }
     
     #students h6 {
         font-weight: 600;
+        color: ghostwhite;
     }
     
     #students h5 {
@@ -142,6 +189,78 @@
         font-weight: lighter;
     }
     /* TESTIOMONIALS: Ends */
+    /* STEPS: Starts */
+    
+    .steps {
+        font-family: 'Comfortaa', cursive;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .steps img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .steps h2 {
+        font-weight: 800;
+    }
+    
+    .steps h6 {
+        font-size: medium;
+        color: gray;
+    }
+    
+    .steps h5 {
+        font-size: large;
+    }
+    /* STEPS: Ends */
+    /* RECRUITERS: Starts */
+    
+    .recruters {
+        font-family: 'Comfortaa', cursive;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    @media only screen and (max-width: 468px) {
+        .recruters img {
+            height: 25px;
+            width: 80px;
+        }
+    }
+    
+    @media (min-width: 468px) and (max-width: 769px) {
+        .recruters img {
+            height: 40px;
+            width: 170px;
+        }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .recruters img {
+            height: 40px;
+            width: 150px;
+        }
+    }
+    
+    @media only screen and (min-width: 1024px) {
+        .recruters img {
+            height: 40px;
+            width: 150px;
+        }
+    }
+    
+    .recruters h2 {
+        font-weight: 690;
+        /* font-size: ; */
+    }
+    /* RECRUTERS: Ends */
+    
+    #bottom_border {
+        background: url("Images/_bottomBorder.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     /* FOOTER: Starts */
     
     .col_white {
